@@ -5,3 +5,5 @@ default: rust_print main.c
 rust_print: rust_print.rs
 	rustc rust_print.rs --crate-type staticlib
 
+clean:
+	rm -rf librust_print.a a.out
